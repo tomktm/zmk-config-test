@@ -1,9 +1,9 @@
-    #include "thumbRotary.dtsi"
+    #include "test.dtsi"
     
     &kscan0 {
     	col-gpios
-    		= <&xiao_d 4 GPIO_ACTIVE_HIGH>	//Col0
-    		, <&xiao_d 5 GPIO_ACTIVE_HIGH>  //Col1
+        = <&gpio1 11 GPIO_ACTIVE_HIGH>	//Col0
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>  //Col1
     		;
     };
     
