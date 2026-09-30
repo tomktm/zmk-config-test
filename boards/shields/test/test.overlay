@@ -2,8 +2,8 @@
 
 / {
     chosen {
+        zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
-        // Other chosen items
     };
 
     default_transform: keymap_transform0 {
@@ -25,7 +25,7 @@
         transform = <&default_transform>; // Label of the matrix transform for this layout
     };
 
-    kscan0: kscan0 {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
