@@ -1,0 +1,23 @@
+if SHIELD_TEST_D
+
+config ZMK_KEYBOARD_NAME
+    default "test_d"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TEST_K
+
+config ZMK_KEYBOARD_NAME
+    default "test_k"
+    
+endif
+
+if SHIELD_THUMBROTARY_LEFT || SHIELD_THUMBROTARY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -18,3 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+  include:
+      - board: nice_nano
+        shield: test_d rgbled_adapter
+      - board: nice_nano
+        shield: test_k rgbled_adapter

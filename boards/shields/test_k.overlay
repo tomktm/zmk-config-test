@@ -1,0 +1,16 @@
+    #include "thumbRotary.dtsi"
+    
+    &kscan0 {
+    	col-gpios
+    		= <&xiao_d 4 GPIO_ACTIVE_HIGH>	//Col0
+    		, <&xiao_d 5 GPIO_ACTIVE_HIGH>  //Col1
+    		;
+    };
+    
+    &default_transform { // Offset of 3 because the left side has 3 columns
+        col-offset = <7>;
+    };
+    
+    &right_encoder {
+      status = "okay";
+    };
