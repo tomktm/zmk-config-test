@@ -1,6 +1,6 @@
 if SHIELD_TEST
 
 config ZMK_KEYBOARD_NAME
-    string "test"
+    default "test"
 
 endif
